@@ -13,19 +13,16 @@ const App = () => {
       name: "Hugo Adams",
       title: "Content Creator",
       feedback: "With high resolution camera, picture becomes clear and beautiful. It’s so easy to operate the drone.",
-      imgSrc: "path_to_hugo_adams_image"
     },
     {
       name: "Jennie Obrien",
       title: "Director Film",
       feedback: "Taking high view video became easy and faster. Battery performance really helps when making films.",
-      imgSrc: "path_to_jennie_obrien_image"
     },
     {
       name: "Lisa Millz",
       title: "Content WQCreator",
       feedback: "Making video content for my trip vlog was so powerful and wonderful. Love the video quality.",
-      imgSrc: "path_to_lisa_millz_image"
     }
   ];
   return (
@@ -153,11 +150,10 @@ const App = () => {
           <p>{testimonial.feedback}</p>
           <div className="information">
             <div className="information-left">
-              <img src={testimonial.imgSrc} alt={testimonial.name} />
             </div>
             <div className="information-right">
-              <h1>{testimonial.name}</h1>
-              <h3>{testimonial.title}</h3>
+              <h1 className='text-xl'>{testimonial.name}</h1>
+              <h3 className='text-xl text-gray-700'>{testimonial.title}</h3>
             </div>
           </div>
         </div>
